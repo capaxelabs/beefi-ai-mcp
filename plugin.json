@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "beefi",
+  "version": "1.0.0",
+  "description": "SEC EDGAR data for US public companies: financials, insider trades, 13F holdings, filings and macro.",
+  "author": {
+    "name": "Capaxe Labs",
+    "url": "https://www.beefi.ai"
+  },
+  "homepage": "https://www.beefi.ai/docs/mcp",
+  "repository": "https://github.com/capaxelabs/beefi-ai-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "sec",
+    "edgar",
+    "finance",
+    "financial-statements",
+    "insider-trading",
+    "13f",
+    "stocks"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Beefi",
+        "shortDescription": "SEC data on US public companies",
+        "longDescription": "Ask about any US public company and get answers built from its SEC filings: income statements, balance sheets, cash flow, ratios, insider trades, 13F holdings, 8-K events and macro series. Every statement period links to the 10-K or 10-Q it came from.",
+        "developerName": "Capaxe Labs",
+        "category": "Finance",
+        "capabilities": [
+          "Read"
+        ],
+        "websiteURL": "https://www.beefi.ai",
+        "privacyPolicyURL": "https://www.beefi.ai/privacy-policy",
+        "termsOfServiceURL": "https://www.beefi.ai/terms-of-service",
+        "supportURL": "https://www.beefi.ai/contact",
+        "defaultPrompt": [
+          "Show insider sales at NVIDIA in the last 3 months",
+          "Compare Microsoft and Alphabet operating margins over 3 years",
+          "How has Apple's free cash flow changed over 5 years?"
+        ],
+        "brandColor": "#FFC107",
+        "composerIcon": "./assets/logo.svg",
+        "logo": "./assets/logo.svg"
+      }
+    }
+  }
+}

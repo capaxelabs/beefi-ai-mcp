@@ -4,7 +4,11 @@
   "title": "Beefi",
   "description": "US public company data from SEC EDGAR: financials, insider trades, 13F holdings, filings and macro.",
   "websiteUrl": "https://www.beefi.ai",
-  "version": "0.2.0",
+  "repository": {
+    "url": "https://github.com/capaxelabs/beefi-ai-mcp",
+    "source": "github"
+  },
+  "version": "0.2.1",
   "icons": [
     {
       "src": "https://www.beefi.ai/favicon.svg",

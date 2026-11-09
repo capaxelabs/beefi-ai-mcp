@@ -11,9 +11,14 @@
   <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=ai.beefi">MCP Registry</a>
 </p>
 
+<p align="center">
+  <a href="https://cursor.com/en/install-mcp?name=beefi&config=eyJ1cmwiOiJodHRwczovL21jcC5iZWVmaS5haS9tY3AifQ=="><img src="https://cursor.com/deeplink/mcp-install-dark.svg" alt="Add Beefi to Cursor" height="32"></a>
+  <a href="https://vscode.dev/redirect/mcp/install?name=beefi&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.beefi.ai%2Fmcp%22%7D"><img src="https://img.shields.io/badge/VS_Code-Install_server-0098FF?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Install Beefi in VS Code" height="32"></a>
+</p>
+
 Beefi is a hosted MCP server at `https://mcp.beefi.ai/mcp`. Connect it to Claude, ChatGPT, Cursor or any MCP client and ask about US public companies. Answers come from SEC filings, and every statement period links back to the 10-K or 10-Q it came from.
 
-This repo holds the install files for Claude Code, Cursor and other clients. The server itself is hosted by Beefi, so there is nothing to run.
+This repo holds the install files for Claude Code, Codex, Cursor and other clients. The server itself is hosted by Beefi, so there is nothing to run.
 
 ## What you can ask
 
@@ -52,9 +57,22 @@ claude mcp add --transport http beefi https://mcp.beefi.ai/mcp
 2. In **Apps & Connectors**, select **Create**.
 3. Name it **Beefi**, paste `https://mcp.beefi.ai/mcp` and choose **OAuth**.
 
+### Codex
+
+```bash
+codex plugin marketplace add capaxelabs/plugins
+codex plugin add beefi@capaxe
+```
+
+Or add it as a plain MCP server:
+
+```bash
+codex mcp add beefi --url https://mcp.beefi.ai/mcp
+```
+
 ### Cursor
 
-Add to `~/.cursor/mcp.json`:
+Use the **Add to Cursor** button above, or add to `~/.cursor/mcp.json`:
 
 ```json
 {
@@ -66,7 +84,7 @@ Add to `~/.cursor/mcp.json`:
 
 ### VS Code
 
-Add to `.vscode/mcp.json`:
+Use the **Install** button above, or add to `.vscode/mcp.json`:
 
 ```json
 {
@@ -114,6 +132,16 @@ The free plan includes 10,000 requests a month and 100 a minute. Every tool call
 - Support: https://www.beefi.ai/contact
 
 Data comes from SEC EDGAR filings. Beefi is not investment advice.
+
+## Files in this repo
+
+| File | Read by |
+| --- | --- |
+| `.claude-plugin/plugin.json`, `.mcp.json` | Claude Code |
+| `plugin.json`, `mcp.json` | Codex and other [Agent Plugins](https://agent-plugins.org) clients |
+| `.cursor-plugin/plugin.json` | Cursor |
+| `server.json` | [Official MCP Registry](https://registry.modelcontextprotocol.io) |
+| `glama.json` | [Glama](https://glama.ai/mcp/servers) |
 
 ## License
 

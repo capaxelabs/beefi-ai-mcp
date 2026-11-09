@@ -1,0 +1,32 @@
+{
+  "name": "beefi",
+  "displayName": "Beefi",
+  "version": "1.0.0",
+  "description": "SEC EDGAR data for US public companies: financials, insider trades, 13F holdings, filings and macro.",
+  "author": {
+    "name": "Capaxe Labs"
+  },
+  "publisher": "Capaxe Labs",
+  "homepage": "https://www.beefi.ai",
+  "repository": "https://github.com/capaxelabs/beefi-ai-mcp",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": [
+    "mcp",
+    "sec",
+    "edgar",
+    "finance",
+    "financial-statements",
+    "insider-trading",
+    "13f",
+    "stocks"
+  ],
+  "category": "integrations",
+  "tags": [
+    "finance",
+    "sec",
+    "stocks",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json"
+}

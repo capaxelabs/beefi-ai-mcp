@@ -10,7 +10,16 @@
   "homepage": "https://www.beefi.ai/docs/mcp",
   "repository": "https://github.com/capaxelabs/beefi-ai-mcp",
   "license": "MIT",
-  "keywords": ["mcp", "sec", "edgar", "finance", "financial-statements", "insider-trading", "13f", "stocks"],
+  "keywords": [
+    "mcp",
+    "sec",
+    "edgar",
+    "finance",
+    "financial-statements",
+    "insider-trading",
+    "13f",
+    "stocks"
+  ],
   "icon": "./assets/logo.svg",
   "documentationUrl": "https://www.beefi.ai/docs/mcp",
   "supportUrl": "https://www.beefi.ai/contact",
