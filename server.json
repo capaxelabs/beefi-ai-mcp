@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.beefi/mcp",
+  "title": "Beefi",
+  "description": "US public company data from SEC EDGAR: financials, insider trades, 13F holdings, filings and macro.",
+  "websiteUrl": "https://www.beefi.ai",
+  "version": "0.2.0",
+  "icons": [
+    {
+      "src": "https://www.beefi.ai/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    },
+    {
+      "src": "https://www.beefi.ai/apple-touch-icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "180x180"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.beefi.ai/mcp"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "beefi": {
+      "type": "http",
+      "url": "https://mcp.beefi.ai/mcp"
+    }
+  }
+}
